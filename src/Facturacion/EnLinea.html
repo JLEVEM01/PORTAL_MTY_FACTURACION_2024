@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/fonts.css">
@@ -24,7 +25,35 @@
     <title>Document</title>
 </head>
 
+<style>
+
+
+
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
 <body>
+
 
     <nav class="bg-transparent fixed z-40 w-full md:bg-white md:shadow-xl flex  justify-center h-12">
 
@@ -41,8 +70,8 @@
                             class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">
                             Consulta
                             <div class="hidden  absolute -left-40 group-hover:block  pt-10 ">
-                                <div class="flex flex-row bg-gray-100 w-56 rounded-lg  ">
-                                     <div class="flex flex-col w-full">
+                                <div class="flex flex-row bg-gray-100 w-56 rounded-lg shadow-2xl ">
+                                    <div class="flex flex-col w-full">
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100 rounded-t-lg">
                                             <a href="Consultar/Municipio.html">Municipio</a>
                                         </div>
@@ -61,13 +90,13 @@
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100  rounded-b-lg">
                                             <a href="Consultar/Banregio.html">Banregio</a>
                                         </div>
-                                     </div>  
+                                    </div>
                                 </div>
 
                             </div>
 
                         </a>
-                            
+
                     </li>
                 </ul>
             </div>
@@ -218,12 +247,12 @@
 
                     <a href="../DatosFiscales.html">
                         <div
-                            class="group content-center relative bg-yellow-100 h-12 w-48 overflow-hidden rounded  text-lg shadow">
+                            class="group content-center relative bg-sky-100 h-12 w-48 overflow-hidden rounded  text-lg shadow">
                             <div
-                                class="absolute inset-0 w-3 bg-yellow-500 transition-all duration-[250ms] ease-out group-hover:w-full">
+                                class="absolute inset-0 w-3 bg-sky-400 transition-all duration-[250ms] ease-out group-hover:w-full">
                             </div>
                             <div class="relative flex intems-center justify-center
-                            space-x-1 text-yellow-500 group-hover:text-white montserrat-semibold">
+                            space-x-1 text-sky-500 group-hover:text-white montserrat-semibold">
 
                                 <span>Siguiente</span>
 
@@ -262,7 +291,22 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../public/img/Comprobantes/OXXO.jpg" alt="">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../../public/img/Comprobantes/EN LINEA2.jpg" alt="">
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../public/img/Comprobantes/EN LINEA3.jpg" alt="">
+
+                                    </div>
+                                    <div class="swiper-slide">Slide 3</div>
+
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!-- <img src="../../public/img/Comprobantes/Comprobante_10.png" alt=""> -->
                         </div>
                     </div>
                 </div>
@@ -272,8 +316,16 @@
 
     <script src="/src/tailwind.config.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
         AOS.init();
+
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
     </script>
 
 </body>
@@ -328,6 +380,5 @@
             los derechos reservados.</span>
     </div>
 </footer>
-
 
 </html>

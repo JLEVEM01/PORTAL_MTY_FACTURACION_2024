@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
 
     <title>Document</title>
 </head>
@@ -29,7 +31,6 @@
 
     .swiper {
         width: 100%;
-        max-width: 1200px;
         height: 100%;
         padding-bottom: 100px;
 
@@ -79,9 +80,38 @@
                         <a data-aos="fade-left" data-aos-delay="800" href="index.html"
                             class="relative text-black hover:text-sky-500 w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-sky-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">Inicio</a>
                     </li>
-                    <li>
+                    <li class="group relative ">
                         <a data-aos="fade-left" data-aos-delay="400" href="ConsultarFactura/Consulta.html"
-                            class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">Consulta</a>
+                            class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">
+                            Consulta
+                            <div class="hidden  absolute -left-40 group-hover:block  pt-10 ">
+                                <div class="flex flex-row bg-gray-100 w-56 rounded-lg shadow-2xl ">
+                                    <div class="flex flex-col w-full">
+                                        <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100 rounded-t-lg">
+                                            <a href="Consultar/Municipio.html">Municipio</a>
+                                        </div>
+                                        <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
+                                            <a href="">En linea</a>
+                                        </div>
+                                        <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
+                                            <a href="Consultar/Banorte.html">Banorte</a>
+                                        </div>
+                                        <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
+                                            <a href="Consultar/OXXO.html">OXXO</a>
+                                        </div>
+                                        <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
+                                            <a href="Consultar/Afirme.html">Afirme</a>
+                                        </div>
+                                        <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100  rounded-b-lg">
+                                            <a href="Consultar/Banregio.html">Banregio</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </a>
+
                     </li>
                 </ul>
             </div>
@@ -131,9 +161,175 @@
 
     </nav>
 
-    <div class="w-full h-3/5 fixed z-30 bg-white content-center hidden md:hidden " id="navbar-multi-level">
-        <ul class="text-4xl montserrat-semibold text-black space-y-5 p-10 ">
-            <li data-aos="zoom-in" class="flex space-x-3 items-center">
+    <div class="w-full h-screen fixed z-30 bg-blue-900/30 backdrop-blur-2xl content-center hidden md:hidden "
+        id="navbar-multi-level">
+
+        <div class='accordion-group' data-accordion="default-accordion">
+
+            <div class='accordion p-5 ' id='basic-heading-one-default'>
+                <button
+                    class='accordion-toggle group rounded  p-5  accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                    aria-controls='basic-collapse-one-default'>
+                    <div class="flex space-x-2 justify-between items-center w-full">
+                        <div class="flex space-x-5 items-center">
+                            <!-- <span class="montserrat-bold text-medium text-left whitespace-normal">1.</span> -->
+                            <h5 class="montserrat-semibold text-2xl text-white">Inicio </h5>
+                        </div>
+
+                        <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                            width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                            <path
+                                d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'>
+                            </path>
+                        </svg>
+                    </div>
+
+                </button>
+                <div id='basic-collapse-one-default' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                    aria-labelledby='basic-heading-one-default'>
+                    <p class='montserrat-regular text-gray-600 p-5 leading-6'>El validador de forma y sintaxis
+                        de los
+                        CFDI que estaba
+                        disponible en el Portal del SAT, dejó de dar servicio en mayo del 2017, toda vez que se
+                        considera que un CFDI certificado cumple con las especificaciones técnicas de estructura
+                        establecidas en el Anexo 20. Si existe la necesidad de realizar las validaciones de
+                        forma y sintaxis a un comprobante.</p>
+                </div>
+            </div>
+
+            <div class='accordion pb-2 ' id='basic-heading-one-default'>
+                <button
+                    class='accordion-toggle group rounded shadow-md p-5  accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                    aria-controls='basic-collapse-one-default'>
+                    <div class="flex space-x-2 justify-between items-center w-full">
+                        <div class="flex space-x-5 items-center">
+                            <!-- <span class="montserrat-bold text-medium text-left whitespace-normal"> 2.</span> -->
+                            <h5 class="montserrat-bold text-sm text-center md:text-left whitespace-normal">¿Que
+                                código postal se debe registrar en el CFDI cuando éste no se encuentre en el
+                                Catálogo de código
+                                postal del Anexo 20?</h5>
+                        </div>
+
+                        <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180'
+                            width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                            <path
+                                d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'>
+                            </path>
+                        </svg>
+                    </div>
+
+                </button>
+                <div id='basic-collapse-one-default' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                    aria-labelledby='basic-heading-one-default'>
+                    <p class='montserrat-regular text-gray-600 p-5 leading-6'>En caso de que dentro del catalogo
+                        c_CodigoPostal, no se encuentre contenida información del código postal, se debe
+                        registrar la clave del código postal mas cercano del lugar de expedición del comprobante
+                        fiscal. Fundamento Legal: Articulo 29-A del Código Fiscal de la Federación y “Anexo 20
+                        Guía de llenado de los comprobantes fiscales digitales por Internet” versión 4.0,
+                        publicada en el Portal del SAT.</p>
+                </div>
+            </div>
+
+            <div class='accordion pb-2' id='basic-heading-two-default'>
+                <button
+                    class='accordion-toggle group  rounded shadow-md p-5 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600'
+                    aria-controls='basic-collapse-two-default'>
+                    <div class="flex space-x-2 justify-between items-center w-full">
+                        <div class="flex space-x-5 items-center">
+                            <!-- <span class="montserrat-bold text-medium text-left whitespace-normal">3.</span> -->
+                            <h5 class="montserrat-bold text-sm text-center whitespace-normal"> ¿Las facturas se
+                                pueden pagar con bienes o servicios?</h5>
+
+                        </div>
+                        <svg class='text-gray-900 transition text-center duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600  accordion-active:rotate-180 '
+                            width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                            <path
+                                d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'>
+                            </path>
+                        </svg>
+                    </div>
+
+                </button>
+                <div id='basic-collapse-two-default' class='accordion-content  w-full px-0 overflow-hidden  pr-4 '
+                    aria-labelledby='basic-heading-two-default'>
+                    <p class='montserrat-regular text-gray-500 p-5 leading-6'>No, no existe en el catálogo la
+                        forma de pago
+                        en especie o
+                        servicios, derivado de que la persona que pretende pagar con bienes está realizando la
+                        enajenación de un bien, por lo tanto, debe emitir un CFDI de ingresos por ese bien que
+                        está enajenando, por otra parte, si la persona que pretende pagar lo realiza con la
+                        prestación de un servicio, debe emitir un CFDI por dicho servicio. Tanto en el caso de
+                        la enajenación de bienes, como en la prestación de servicios se considera que el cliente
+                        y el proveedor son el mismo contribuyente, por lo tanto, se puede aplicar la forma de
+                        pago “17” (Compensación). Fundamento legal: Artículo 14 del Código Fiscal de la
+                        Federación.</p>
+                </div>
+            </div>
+
+            <div class='accordion pb-2 ' id='basic-heading-three-default'>
+                <button
+                    class='accordion-toggle group rounded shadow-md p-5 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600'
+                    aria-controls='basic-collapse-three-default'>
+                    <div class="flex space-x-2 justify-between items-center w-full">
+                        <h5 class="montserrat-bold text-sm text-center whitespace-normal">¿Cuando puedo solicitar mis
+                            facturas?</h5>
+
+                        <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600  accordion-active:rotate-180'
+                            width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                            <path
+                                d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'>
+                            </path>
+                        </svg>
+                    </div>
+
+                </button>
+                <div id='basic-collapse-three-default' class='accordion-content  w-full px-0 overflow-hidden  pr-4 '
+                    aria-labelledby='basic-heading-three-default'>
+                    <p class='montserrat-regular text-gray-500 p-5 leading-6'>Durante el año en curso, en caso
+                        de requerir
+                        años anteriores
+                        enviar un correo a: soporte.facturacion@monterrey.gob.mx.</p>
+                </div>
+            </div>
+
+            <div class='accordion pb-2 ' id='basic-heading-three-default'>
+                <button
+                    class='accordion-toggle group rounded shadow-md p-5 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600'
+                    aria-controls='basic-collapse-three-default'>
+                    <div class="flex space-x-2 justify-between items-center w-full">
+                        <h5 class="montserrat-bold text-sm text-center whitespace-normal"> ¿Como puedo consultar mi
+                            constancia? </h5>
+                        <svg class='text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600  accordion-active:rotate-180'
+                            width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                            <path
+                                d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'>
+                            </path>
+                        </svg>
+                    </div>
+
+                </button>
+                <div id='basic-collapse-three-default' class='accordion-content  w-full px-0 overflow-hidden  pr-4 '
+                    aria-labelledby='basic-heading-three-default'>
+                    <p class='montserrat-regular text-gray-500 pt-5 pl-5 leading-6'>Si no tienes tu constancia
+                        puedes <a class="text-blue-500"
+                            href="https://www.sat.gob.mx/aplicacion/login/43824/reimprime-tus-acuses-del-rfc">consultarla
+                            aquí</a></p>
+
+                    <p class='text-sm text-gray-500 pl-5  leading-6'>Nueva herramienta para <a class="text-blue-500"
+                            href="https://www.sat.gob.mx/aplicacion/login/43824/reimprime-tus-acuses-del-rfc">consultar
+                            constancia</a> brindada por el SAT el 12 de marzo de 2023</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <ul class="text-4xl montserrat-semibold text-cyan-100 space-y-5 p-10">
+            <li data-aos="zoom-in" class="flex space-x-3 items-center p-3  rounded-xl bg-dark/20 backdrop-blur-3xl">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                     class="icon icon-tabler icons-tabler-filled icon-tabler-home">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -143,24 +339,53 @@
                 <a href="">Inicio</a>
             </li>
 
-            <li class="flex space-x-3 items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-file-broken">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-                    <path d="M5 7v-2a2 2 0 0 1 2 -2h7l5 5v2" />
-                    <path d="M19 19a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2" />
-                    <path d="M5 16h.01" />
-                    <path d="M5 13h.01" />
-                    <path d="M5 10h.01" />
-                    <path d="M19 13h.01" />
-                    <path d="M19 16h.01" />
-                </svg>
-                <a href="">Facturacion</a>
+            <li class="flex flex-row space-x-3 items-center p-3   rounded-xl bg-dark/20 backdrop-blur-3xl">
+                <div class="flex flex-col space-y-3">
+                    <div class="flex justify-between w-full  ">
+                        <div class="flex items-center space-x-3 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-file-broken">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M5 7v-2a2 2 0 0 1 2 -2h7l5 5v2" />
+                                <path d="M19 19a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2" />
+                                <path d="M5 16h.01" />
+                                <path d="M5 13h.01" />
+                                <path d="M5 10h.01" />
+                                <path d="M19 13h.01" />
+                                <path d="M19 16h.01" />
+                            </svg>
+                            <a href="">Facturacion</a>
+                        </div>
+                        <button data-collapse-toggle="navbar-multi-level-mobile" type="button"
+                            class="inline-flex items-center mx-auto p-2  h-10 w-10 bg-white rounded-full transition-transform duration-300  justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                            aria-controls="navbar-multi-level" aria-expanded="false" id="menu-toggle">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="hidden text-2xl montserrat-regular pl-9 pt-5 space-y-5" id="navbar-multi-level-mobile">
+                        <li>Municipio</li>
+                        <li>En linea</li>
+                        <li>Banorte</li>
+                        <li>OXXO</li>
+                        <li>Afirme</li>
+                        <li>Banregio</li>
+    
+                    </ul>
+                </div>
+
+
+
             </li>
 
-            <li class="flex space-x-3 items-center">
+            <li class="flex space-x-3 items-center p-3  rounded-xl bg-dark/20 backdrop-blur-3xl">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="icon icon-tabler icons-tabler-outline icon-tabler-search">
@@ -171,7 +396,7 @@
                 <a href="">Consulta</a>
             </li>
 
-            <li class="flex space-x-3 items-center">
+            <li class="flex space-x-3 items-center p-3  rounded-xl bg-dark/20 backdrop-blur-3xl">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                     class="icon icon-tabler icons-tabler-filled icon-tabler-mail">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -183,7 +408,7 @@
                 <a href="">Contacto</a>
             </li>
 
-            <li class="flex space-x-3 items-center">
+            <li class="flex space-x-3 items-center p-3  rounded-xl bg-dark/20 backdrop-blur-3xl">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                     class="icon icon-tabler icons-tabler-filled icon-tabler-help-circle">
@@ -195,7 +420,7 @@
             </li>
 
             </li>
-        </ul>
+        </ul> -->
     </div>
 
 
@@ -212,7 +437,7 @@
         <!-- <video class="object-cover absolute h-screen -z-20 w-screen  top-0 left-0" src="/public/mp4/bgIndex2.mp4" autoplay loop
             muted>
         </video> -->
-        <div class="h-screen content-center bg-gradient-to-r from-blue-800/70 to-cyan-700/70  ">
+        <div class="h-screen content-center bg-gradient-to-r from-blue-950/90 to-cyan-600/80 ">
             <div class="max-w-7xl mx-auto px-6 md:px-12 py-6 xl:px-6 relative ">
                 <div class="flex flex-wrap md:flex-nowrap px-10 justify-center items-center space-x-5 ">
                     <div data-aos="zoom-in" data-aos-delay="700" class="order-2 md:order-1 mt-10 md:mt-0 hu__hu__">
@@ -265,7 +490,7 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper ">
                     <div class="swiper-slide">
-                        <div class=" h-full w-full  bg-white rounded-3xl shadow-xl ">
+                        <div class=" h-full w-full  bg-white rounded-3xl shadow-3xl ">
                             <div class="h-56   bg-blue-500 rounded-t-3xl content-center ">
                                 <div class="mx-auto h-32 w-32">
                                     <img src="../public/img/ayuntamiento.png" alt="" height="50"
@@ -332,7 +557,7 @@
                                                 Consultar
                                             </a>
 
-                                            <a href=""
+                                            <a href="Facturacion/EnLinea.html"
                                                 class="montserrat-semibold text-sky-500 group-hover:text-white group-hover:bg-sky-600 rounded border-2 mt-5 w-full text-center border-sky-500 px-5 py-3">
                                                 Generar factura
                                             </a>
@@ -520,21 +745,23 @@
         })
 
         var swiper = new Swiper(".mySwiper", {
-            effect: "creative",
-            creativeEffect: {
-                prev: {
-                    shadow: true,
-                    translate: ["100%", 0, -400],
-                    opacity: 10,
-                },
-                next: {
-                    translate: ["100%", 0, 0],
-                    opacity: 10,
+            // effect: "creative",
+            // creativeEffect: {
+            //     prev: {
+            //         shadow: true,
+            //         translate: ["100%", 0, -400],
+            //         opacity: 10,
+            //     },
+            //     next: {
+            //         translate: ["100%", 0, 0],
+            //         opacity: 10,
 
-                },
-            },
+            //     },
+            // },
             slidesPerView: "auto",
             spaceBetween: 30,
+            grabCursor: true,
+
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -563,11 +790,11 @@
 
 <footer class="bg-white w-full shadow  ">
     <div class="w-full max-w-7xl px-6 mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center justify-center md:justify-between">
+        <div class="flex w-full flex-wrap md:flex-nowrap justify-center md:justify-between">
             <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                 <img src="../public/img/LOGOMTY2024.png" class="h-32" alt="Flowbite Logo" />
             </a>
-            <ul class="flex flex-wrap items-center space-x-3 mb-6 text-sm font-medium text-black sm:mb-0 ">
+            <ul class="flex  items-center space-x-3 mb-6 text-sm font-medium text-black sm:mb-0 ">
                 <li>
                     <a href="https://www.facebook.com/mtygob" class="hover:underline me-4 md:me-6">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -605,8 +832,8 @@
 
             </ul>
         </div>
-        <span class="block text-sm text-black montserrat-semibold sm:text-center ">© 2024 <a
-                href="https://flowbite.com/" class="hover:underline">Munipio de la ciudad de Monterrey</a> - Todos
+        <span class="block text-sm text-black montserrat-semibold text-center ">© 2024 <a href="https://flowbite.com/"
+                class="hover:underline">Munipio de la ciudad de Monterrey</a> - Todos
             los derechos reservados.</span>
     </div>
 </footer>
