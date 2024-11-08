@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../styles/index/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+
+    <link rel="stylesheet" href="../styles/transitionPage.css">
+    <title>Document</title>
+</head>
+
+<style>
+
+
+</style>
+
+<body >
+    <div id="loader" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+        <div class="animate-spin rounded-full w-14  h-14 border-4 border-t-cyan-500">
+
+        </div>
+
+    </div>
+
+
+    <nav class="bg-transparent fixed z-40 w-full bg-transparent md:bg-black/30 md:backdrop-blur-xl  flex  justify-center h-12" id="navBar">
+
+        <div class="flex  md:space-x-5 justify-beetwwen">
+
+            <div class=" hidden md:block content-center ">
+                <ul id="listNav1" class="flex  text-sm items-center space-x-5 text-white">
+                    <li>
+                        <a data-aos="fade-left" data-aos-delay="800" href="index.html"
+                            class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">Inicio</a>
+                    </li>
+                    <li class="group relative ">
+                        <a data-aos="fade-left" data-aos-delay="400" href="ConsultarFactura/Consulta.html"
+                            class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">
+                            Consulta
+                            <div class="hidden  absolute -left-40 group-hover:block  pt-10 ">
+                                <div class="flex flex-row bg-gray-100 text-black w-56 rounded-lg shadow-2xl ">
+                                    <div class="flex flex-col w-full">
+                                        <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100 rounded-t-lg">
+                                            <a href="Consultar/Municipio.html">Municipio</a>
+                                        </div>
+                                        <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
+                                            <a href="">En linea</a>
+                                        </div>
+                                        <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
+                                            <a href="Consultar/Banorte.html">Banorte</a>
+                                        </div>
+                                        <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
+                                            <a href="Consultar/OXXO.html">OXXO</a>
+                                        </div>
+                                        <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
+                                            <a href="Consultar/Afirme.html">Afirme</a>
+                                        </div>
+                                        <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100  rounded-b-lg">
+                                            <a href="Consultar/Banregio.html">Banregio</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div data-aos="fade-down" data-aos-delay="100"
+                class="bg-gray-100 shadow-lg h-24 md:h-28 w-56 m-auto  content-center rounded-b-2xl">
+                <img data-aos="zoom-in" data-aos-delay="200" src="../../public/img/LOGOMTY2024.png" alt="" width="200"
+                    class="m-auto">
+
+                <div class="flex justify-center ">
+                    <button data-collapse-toggle="navbar-multi-level" type="button"
+                        class="inline-flex items-center mx-auto p-2  h-10 w-10 bg-white rounded-full transition-transform duration-300  justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-multi-level" aria-expanded="false" id="menu-toggle">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class=" hidden md:block  content-center ">
+                <ul id="listNav2" class="flex  text-sm items-center  space-x-5 text-white">
+                    <li><a data-aos="fade-right" data-aos-delay="400" href="Contacto.html"
+                            class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">
+                            Contacto
+                        </a>
+                    </li>
+                    <li>
+
+                        <a data-aos="fade-right" data-aos-delay="800" href="Ayuda.html"
+                            class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">
+                            Ayuda
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+    </nav>
+
+    <div class="w-full h-screen fixed z-30 bg-blue-900/30 backdrop-blur-2xl content-center hidden md:hidden "
+        id="navbar-multi-level">
+
+        <div class='accordion-group' data-accordion="default-accordion">
+
+            <div class='accordion p-3 bg-dark/20 backdrop-blur-xl m-2 rounded-xl  ' id='basic-heading-one-default'>
+                <a href="index.html"
+                    class='accordion-toggle group rounded  p-5  accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                    aria-controls='basic-collapse-one-default'>
+                    <div class="flex space-x-2 justify-between items-center w-full">
+                        <div class="flex space-x-5 items-center">
+                            <i class="fas fa-home w-5 fa-lg" style="color: #ffffff;"></i>
+                            <h5 class="montserrat-semibold text-2xl text-white">Inicio </h5>
+                        </div>
+
+                    </div>
+
+                </a>
+                <div id='basic-collapse-one-default' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                    aria-labelledby='basic-heading-one-default'>
+
+                </div>
+            </div>
+
+            <div class='accordion p-3 bg-dark/20 backdrop-blur-xl m-2 rounded-xl ' id='basic-heading-one-default'>
+                <button
+                    class='accordion-toggle group rounded p-5  accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                    aria-controls='basic-collapse-one-default'>
+                    <div class="flex space-x-2 justify-between items-center w-full">
+                        <div class="flex space-x-5 items-center">
+                            <i class="fas fa-file w-5 fa-lg" style="color: #ffffff;"></i>
+
+                            <h5 class="montserrat-semibold text-2xl text-white">Facturacion</h5>
+                        </div>
+
+                        <svg class='text-white transition duration-500 group-hover:text-white accordion-active:text-white accordion-active:rotate-180'
+                            width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                            <path
+                                d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'>
+                            </path>
+                        </svg>
+                    </div>
+
+                </button>
+                <div id='basic-collapse-one-default' class='accordion-content w-full px-0 overflow-hidden pr-4 '
+                    aria-labelledby='basic-heading-one-default'>
+                    <ul class=" text-xl text-white montserrat-regular pl-9 pt-5 space-y-5"
+                        id="navbar-multi-level-mobile">
+                        <li><a href="Facturacion/Municipio.html">Municipio</a></li>
+                        <li><a href="Facturacion/EnLinea.html">En linea</a></li>
+                        <li><a href="Facturacion/Banorte.html">Banorte</a></li>
+                        <li><a href="Facturacion//OXXO.html">OXXO</a></li>
+                        <li><a href="Facturacion/Afirme.html">Afirme</a></li>
+                        <li><a href="Facturacion/Banorte.html">Banregio</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class='accordion p-3 bg-dark/20 backdrop-blur-xl m-2 rounded-xl ' id='basic-heading-two-default'>
+                <button
+                    class='accordion-toggle group  rounded  p-5 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600'
+                    aria-controls='basic-collapse-two-default'>
+                    <div class="flex space-x-2 justify-between items-center w-full">
+                        <div class="flex space-x-5 items-center">
+                            <i class="fas fa-search w-5 fa-lg" style="color: #ffffff;"></i>
+                            <h5 class="montserrat-semibold text-2xl text-white">Consultar</h5>
+
+                        </div>
+                        <svg class='text-white transition text-center duration-500 group-hover:text-white accordion-active:text-white accordion-active:rotate-180 '
+                            width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                            <path
+                                d='M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25'
+                                stroke='currentColor' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'>
+                            </path>
+                        </svg>
+                    </div>
+
+                </button>
+                <div id='basic-collapse-two-default' class='accordion-content  w-full px-0 overflow-hidden  pr-4 '
+                    aria-labelledby='basic-heading-two-default'>
+                    <ul class=" text-xl text-white montserrat-regular pl-9 pt-5 space-y-5"
+                        id="navbar-multi-level-mobile">
+                        <li><a href="Consultar/Municipio.html">Municipio</a></li>
+                        <li><a href="Consultar/">En linea</a></li>
+                        <li><a href="Consultar/Banorte.html">Banorte</a></li>
+                        <li><a href="Consultar/OXXO.html">OXXO</a></li>
+                        <li><a href="Consultar/Afirme.html">Afirme</a></li>
+                        <li><a href="Consultar/Banorte.html">Banregio</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class='accordion p-3 bg-dark/20 backdrop-blur-xl m-2 rounded-xl ' id='basic-heading-three-default'>
+                <a href="Contacto.html"
+                    class='accordion-toggle group rounded p-5 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600'
+                    aria-controls='basic-collapse-three-default'>
+                    <div class="flex space-x-2 justify-between items-center w-full">
+                        <div class="flex space-x-5 items-center">
+                            <i class="fas fa-envelope w-5 fa-lg" style="color: #ffffff;"></i>
+                            <h5 class="montserrat-semibold text-2xl text-white">Contacto</h5>
+                        </div>
+
+
+
+                    </div>
+
+                </a>
+                <div id='basic-collapse-three-default' class='accordion-content  w-full px-0 overflow-hidden  pr-4 '
+                    aria-labelledby='basic-heading-three-default'>
+                </div>
+            </div>
+
+            <div class='accordion p-3 bg-dark/20 backdrop-blur-xl m-2 rounded-xl' id='basic-heading-three-default'>
+                <a href="Ayuda.html"
+                    class='accordion-toggle group rounded p-5 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600'
+                    aria-controls='basic-collapse-three-default'>
+                    <div class="flex space-x-2 justify-between items-center w-full">
+                        <div class="flex space-x-5 items-center">
+                            <i class="fas fa-question-circle fa-lg w-5" style="color: #ffffff;"></i>
+                            <h5 class="montserrat-semibold text-2xl text-white">Ayuda </h5>
+
+                        </div>
+
+                    </div>
+
+                </a>
+                <div id='basic-collapse-three-default' class='accordion-content  w-full px-0 overflow-hidden  pr-4 '
+                    aria-labelledby='basic-heading-three-default'>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="h-[100vh]  gradient-bg ">
+        <!-- <video class="object-cover absolute h-screen -z-20 w-screen  top-0 left-0" src="/public/mp4/bgIndex2.mp4" autoplay loop
+            muted>
+        </video> -->
+        <div class="h-screen content-center absolute z-30 inset-0">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 py-6 xl:px-6 relative ">
+                <div class="flex flex-wrap md:flex-nowrap px-10 justify-center items-center space-x-5 ">
+                    <!-- <div data-aos="zoom-in" data-aos-delay="700" class="order-2 md:order-1 mt-10 md:mt-0 hu__hu__">
+                        <img src="../../public/img/mtylog.png" alt="" width="500">
+                    </div> -->
+                    <div class="order-1 md:order-2">
+                        <img src="../../public/img/LOGOMTY2024_W_.png" class="w-[150px] md:w-[200px] xl:w-[250px] mb-10" alt="">
+
+                        <h1 data-aos="fade-up" data-aos-delay="100"
+                            class="text-4xl md:text-5xl xl:text-7xl text-left md:text-lett text-white montserrat-bold shine-text">
+                            BIENVENIDO AL
+                            PORTAL
+                            <br> DE FACTURACION
+                        </h1>
+
+
+
+                        <p data-aos="fade-up" data-aos-delay="300"
+                            class="my-5 text-left md:text-left text-white text-medium md:text-xl montserrat-regular">
+                            REALIZA TU FACTURAS DE PAGO PREDIAL CON TUS DATOS FISCALES
+                        </p>
+
+                        <div data-aos="fade-up" data-aos-delay="500"
+                            class="h-3 w-full bg-gradient-to-r from-blue-500 to-blue-800 rounded-full">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <svg viewBox="0 0 100vw 100vw" xmlns='http://www.w3.org/2000/svg' class="noiseBg">
+            <filter id='noiseFilterBg'>
+                <feTurbulence type='fractalNoise' baseFrequency='0.6' stitchTiles='stitch' />
+            </filter>
+
+            <rect width='100%' height='100%' preserveAspectRatio="xMidYMid meet" filter='url(#noiseFilterBg)' />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="svgBlur">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                        result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+        <div class="gradients-container z-20">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="interactive"></div>
+        </div>
+
+    </section>
+
+    <section class="bg-transparent -mt-28 ">
+        <div class="max-w-7xl mx-auto  px-6 md:px-12 py-6 xl:px-6  ">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide">
+                        <!-- <div class=" h-full w-full  bg-gray-100 rounded-3xl ">
+
+                            <div class="content-center relative group p-5 rounded-b-3xl ">
+                                <div
+                                    class="absolute  inset-x-0 bottom-0 h-0 rounded-3xl bg-blue-500 transition-all duration-[250ms] ease-out group-hover:h-full">
+                                </div>
+                                <div class="relative my-5 text-black group-hover:text-white">
+                                    <div class="mx-auto h-32 w-32 mb-10">
+                                        <img src="../../public/img/ayuntamiento.png" alt="" height="50"
+                                            class="group-hover:filter group-hover:brightness-0 group-hover:invert ">
+    
+                                    </div>
+                                    <h1 class="text-center text-2xl montserrat-bold  ">
+                                        Municipio</h1>
+                                    <p class="montserrat-regular mt-5 text-sm  text-center ">
+                                        Para pagos realizados en cajas de
+                                        Palacio Municpal o Delegaciones
+                                    </p>
+
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-col space-y-3 w-full">
+                                            <a href="Consultar/Municipio.html"
+                                                class="montserrat-semibold text-white group-hover:text-white bg-blue-600 rounded mt-5 w-full text-center px-5 py-2">
+                                                Consultar
+                                            </a>
+
+                                            <a href="Facturacion/Municipio.html"
+                                                class="montserrat-semibold text-white group-hover:text-white bg-blue-600 rounded mt-5 w-full text-center px-5 py-2">
+                                                Generar factura
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class=" h-full w-full  bg-gray-100 rounded-3xl shadow-xl ">
+                            <div class="h-56  bg-gradient-to-r from-blue-700 to-blue-500 rounded-t-3xl content-center ">
+                                <div class="mx-auto h-32 w-32">
+                                    <img src="../../public/img/ayuntamiento.png" alt="" height="50"
+                                        class="filter brightness-0 invert ">
+
+                                </div>
+                            </div>
+
+                            <div class="content-center relative group p-5 rounded-b-3xl ">
+
+                                <div
+                                    class="absolute  inset-x-0 bottom-0 h-5 rounded-b-3xl bg-gradient-to-r from-blue-700 to-blue-500  transition-all duration-[250ms] ease-out group-hover:h-full">
+                                </div>
+                                <div class="relative my-5 text-black group-hover:text-white">
+
+                                    <h1 class="text-center text-2xl montserrat-bold  ">
+                                        Municipio</h1>
+                                    <p class="montserrat-regular mt-5 text-sm  text-center ">
+                                        Para pagos realizados en cajas de
+                                        Palacio Municpal o Delegaciones
+                                    </p>
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-col space-y-3 w-full">
+                                            <a href=""
+                                                class="montserrat-semibold text-white bg-blue-600  rounded rounded mt-5 w-full text-center  px-5 py-2">
+                                                Consultar
+                                            </a>
+
+                                            <a href="Facturacion/EnLinea.html"
+                                                class="montserrat-semibold text-white bg-blue-600  rounded rounded mt-5 w-full text-center  px-5 py-2">
+                                                Generar factura
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class=" h-full w-full  bg-gray-100 rounded-3xl shadow-xl">
+                            <div class="h-56  bg-gradient-to-r from-blue-700 to-blue-500 rounded-t-3xl content-center">
+                                <div class="mx-auto h-32 w-32">
+                                    <img src="../../public/img/sitio-web.png" alt="" height="50"
+                                        class="filter brightness-0 invert ">
+
+                                </div>
+                            </div>
+                            <div class="content-center relative group p-5 rounded-b-3xl ">
+
+                                <div
+                                    class="absolute  inset-x-0 bottom-0 h-5 rounded-b-3xl bg-gradient-to-r from-blue-700 to-blue-500 transition-all duration-[250ms] ease-out group-hover:h-full">
+                                </div>
+                                <div class="relative my-5 text-black group-hover:text-white">
+
+                                    <h1 class="text-center text-2xl montserrat-bold  ">
+                                        En linea</h1>
+                                    <p class="montserrat-regular mt-5 text-sm  text-center ">
+                                        Para pagos realizados en el modulo digital del Municipio
+                                    </p>
+
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-col space-y-3 w-full">
+                                            <a href=""
+                                                class="montserrat-semibold text-white bg-blue-600  rounded rounded mt-5 w-full text-center  px-5 py-2">
+                                                Consultar
+                                            </a>
+
+                                            <a href="Facturacion/EnLinea.html"
+                                                class="montserrat-semibold text-white bg-blue-600 rounded rounded mt-5 w-full text-center  px-5 py-2">
+                                                Generar factura
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class=" h-full w-full  bg-gray-100 rounded-3xl shadow-xl">
+                            <div class="h-56  bg-gradient-to-r from-blue-700 to-blue-500 rounded-t-3xl content-center ">
+                                <div class="mx-auto h-18 w-40">
+                                    <img src="../../public/img/BANORTE.png" alt="" height="50"
+                                        class="filter brightness-0 invert ">
+
+                                </div>
+                            </div>
+                            <div class="content-center relative group p-5 rounded-b-3xl ">
+                                <div
+                                    class="absolute  inset-x-0 bottom-0 h-5 rounded-b-3xl bg-gradient-to-r from-blue-700 to-blue-500 transition-all duration-[250ms] ease-out group-hover:h-full">
+                                </div>
+                                <div class="relative my-5 text-black group-hover:text-white">
+
+                                    <h1 class="text-center text-2xl montserrat-bold  ">
+                                        Banorte</h1>
+                                    <p class="montserrat-regular mt-5 text-sm  text-center ">
+                                        Para pagos realizados con un <br> comprobante de banorte
+
+                                    </p>
+
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-col space-y-3 w-full">
+                                            <a href="Consultar/Banorte.html"
+                                                class="montserrat-semibold text-white bg-blue-600 rounded  mt-5 w-full text-center  px-5 py-2">
+                                                Consultar
+                                            </a>
+
+                                            <a href="Facturacion/Banorte.html"
+                                                class="montserrat-semibold text-white bg-blue-600 rounded  mt-5 w-full text-center  px-5 py-2">
+                                                Generar factura
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=" h-full w-full  bg-gray-100 rounded-3xl shadow-xl">
+                            <div class="h-56 bg-gradient-to-r from-blue-700 to-blue-500  rounded-t-3xl content-center">
+                                <div class="mx-auto h-18 w-40">
+                                    <img src="../../public/img/oxxo.png" alt="" height="50"
+                                        class="filter brightness-0 invert ">
+
+                                </div>
+                            </div>
+                            <div class="content-center relative group p-5 rounded-b-3xl ">
+                                <div
+                                    class="absolute  inset-x-0 bottom-0 h-5 rounded-b-3xl bg-gradient-to-r from-blue-700 to-blue-500  transition-all duration-[250ms] ease-out group-hover:h-full">
+                                </div>
+                                <div class="relative my-5 text-black group-hover:text-white">
+
+                                    <h1 class="text-center text-2xl montserrat-bold  ">
+                                        OXXO</h1>
+                                    <p class="montserrat-regular mt-5 text-sm  text-center ">
+                                        Para pagos realizados con un <br> comprobante de OXXO
+                                    </p>
+
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-col space-y-3 w-full">
+                                            <a href="Consultar/OXXO.html"
+                                                class="montserrat-semibold text-white bg-blue-600 rounded  mt-5 w-full text-center  px-5 py-2">
+                                                Consultar
+                                            </a>
+
+                                            <a href="Facturacion/OXXO.html"
+                                                class="montserrat-semibold text-white bg-blue-600 rounded  mt-5 w-full text-center px-5 py-2">
+                                                Generar factura
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=" h-full w-full  bg-gray-100 rounded-3xl shadow-xl">
+                            <div class="h-56   bg-gradient-to-r from-blue-700 to-blue-500 rounded-t-3xl content-center">
+                                <div class="mx-auto h-24 w-32">
+                                    <img src="../../public/img/AFIRME.png" alt="" height="50"
+                                        class="filter brightness-0 invert ">
+
+                                </div>
+                            </div>
+                            <div class="content-center relative group p-5 rounded-b-3xl ">
+                                <div
+                                    class="absolute  inset-x-0 bottom-0 h-5 rounded-b-3xl bg-gradient-to-r from-blue-700 to-blue-500 transition-all duration-[250ms] ease-out group-hover:h-full">
+                                </div>
+                                <div class="relative my-5 text-black group-hover:text-white">
+
+                                    <h1 class="text-center text-2xl montserrat-bold  ">
+                                        Afirme</h1>
+                                    <p class="montserrat-regular mt-5 text-sm  text-center ">
+                                        PPara pagos realizados con un <br> comprobante de afirme
+                                    </p>
+
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-col space-y-3 w-full">
+                                            <a href="Consultar/Afirme.html"
+                                                class="montserrat-semibold text-white bg-blue-600 rounded  mt-5 w-full text-center  px-5 py-2">
+                                                Consultar
+                                            </a>
+
+                                            <a href="Facturacion/Afirme.html"
+                                                class="montserrat-semibold text-white bg-blue-600 rounded  mt-5 w-full text-center  px-5 py-2">
+                                                Generar factura
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=" h-full w-full  bg-gray-100 rounded-3xl shadow-xl">
+                            <div class="h-56   bg-gradient-to-r from-blue-700 to-blue-500 rounded-t-3xl content-center">
+                                <div class="mx-auto h-18 w-44">
+                                    <img src="../../public/img/banregio.png" alt="" height="50"
+                                        class="filter brightness-0 invert ">
+
+                                </div>
+                            </div>
+                            <div class="content-center relative group p-5 rounded-b-3xl ">
+                                <div
+                                    class="absolute  inset-x-0 bottom-0 h-5 rounded-b-3xl bg-gradient-to-r from-blue-700 to-blue-500 transition-all duration-[250ms] ease-out group-hover:h-full">
+                                </div>
+                                <div class="relative my-5 text-black group-hover:text-white">
+
+                                    <h1 class="text-center text-2xl montserrat-bold  ">
+                                        Banregio</h1>
+                                    <p class="montserrat-regular mt-5 text-sm  text-center ">
+                                        Para pagos realizados con un <br> comprobante de Banregio
+                                    </p>
+
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-col space-y-3 w-full">
+                                            <a href="Consultar/Banregio.html"
+                                                class="montserrat-semibold text-white bg-blue-600 rounded mt-5 w-full text-center  px-5 py-2">
+                                                Consultar
+                                            </a>
+
+                                            <a href="Facturacion/Banregio.html"
+                                                class="montserrat-semibold text-white bg-blue-600 rounded mt-5 w-full text-center  px-5 py-2">
+                                                Generar factura
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination mt-40"></div>
+
+            </div>
+
+            <div class="flex flex-row flex-wrap lg:flex-nowrap my-14  space-y-14 lg:space-y-0 space-x-0 md:space-x-10 mx-5">
+                <div class="w-full lg:w-3/5 order-2 lg:order-1">
+                    <div class="flex flex-row flex-wrap md:flex-nowrap  h-full space-y-5 md:space-y-5 space-x-0 md:space-x-5">
+                        <div class="flex flex-col space-y-5 w-full ">
+                            <div data-aos="fade-up" data-aos-delay="100"
+                                class="h-full bg-blue-900 hover:bg-blue-500 p-10 rounded-xl  ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-file-search text-white text-left mb-5">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                    <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" />
+                                    <path d="M16.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" />
+                                    <path d="M18.5 19.5l2.5 2.5" />
+                                </svg>
+                                <h1 class="text-3xl montserrat-bold text-white text-left">Comprobante <br> de pago</h1>
+
+                                <p class="montserrat-regular text-[18px] text-white mt-5">Para indenticar tu pago al
+                                    momneto de generar tu factura, se solcitaran datos como la <span class="montserrat-bold">fecha de pago, folio
+                                        fiscal e importe pagado</span>.</p>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="500"
+                                class="h-full bg-blue-900 hover:bg-blue-500 p-10 rounded-xl ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    class="icon icon-tabler icons-tabler-filled icon-tabler-user text-white text-left mb-5">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+                                    <path
+                                        d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" />
+                                </svg>
+                                <h1 class="text-3xl montserrat-bold text-white text-left">Constancia de situacion fiscal
+                                </h1>
+                                <p class="montserrat-regular text-[18px] text-white mt-5">Para generar tu factura con el
+                                    fin de efectos fiscales, tendras que proporcionar tu <span class="montserrat-bold">RFC, Razon social, Regimen
+                                        fiscal y Domicilio fiscal</span>.</p>
+
+                            </div>
+                        </div>
+                        <div class="flex flex-col my-0 md:py-20 space-y-5 w-full ">
+
+                            <div data-aos="fade-up" data-aos-delay="300"
+                                class="h-full bg-blue-900 hover:bg-blue-500 p-10 rounded-xl ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-current-location text-white mb-5 text-left">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                    <path d="M12 12m-8 0a8 8 0 1 0 16 0a8 8 0 1 0 -16 0" />
+                                    <path d="M12 2l0 2" />
+                                    <path d="M12 20l0 2" />
+                                    <path d="M20 12l2 0" />
+                                    <path d="M2 12l2 0" />
+                                </svg>
+                                <h1 class="text-3xl montserrat-bold text-white text-left">Pago correspondiente al año en
+                                    curso</h1>
+                                <p class="montserrat-regular text-[18px] text-white mt-5">Pago al que se requiera
+                                    generar un factura tendra que corresponder al año en curso.</p>
+
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="700" class="h-full bg-blue-900 hover:bg-blue-500 p-10 rounded-xl ">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="80"  height="80"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-copy-check text-white text-left mb-5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.333 6a3.667 3.667 0 0 1 3.667 3.667v8.666a3.667 3.667 0 0 1 -3.667 3.667h-8.666a3.667 3.667 0 0 1 -3.667 -3.667v-8.666a3.667 3.667 0 0 1 3.667 -3.667zm-3.333 -4c1.094 0 1.828 .533 2.374 1.514a1 1 0 1 1 -1.748 .972c-.221 -.398 -.342 -.486 -.626 -.486h-10c-.548 0 -1 .452 -1 1v9.998c0 .32 .154 .618 .407 .805l.1 .065a1 1 0 1 1 -.99 1.738a3 3 0 0 1 -1.517 -2.606v-10c0 -1.652 1.348 -3 3 -3zm1.293 9.293l-3.293 3.292l-1.293 -1.292a1 1 0 0 0 -1.414 1.414l2 2a1 1 0 0 0 1.414 0l4 -4a1 1 0 0 0 -1.414 -1.414" /></svg>
+                                <h1 class="text-3xl montserrat-bold text-white text-left">Pago exclusio</h1>
+
+                                <p class="montserrat-regular text-[18px] text-white mt-5">Para que puedas generar o consultar tu factura, el peago debera ser exclusivamete del muincipio de la ciduad de<span class="montserrat-bold"> Monterrey</span>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-2/5 content-center order-1 lg:order-2">
+                    <h1 data-aos="fade-up" data-aos-delay="100" class="text-5xl md:text-6xl text-left montserrat-bold text-blue-400">
+                        ¿Que necesito para poder generar mi factura?</h1>
+
+                    <p data-aos="fade-up" data-aos-delay="300" class="text-xl text-blakc montserrat-regular mt-5">Para poder generar tu factura se requerira que
+                        tengas los siguientes docuemntos a la mano:</p>
+
+                    <ul data-aos="fade-up" data-aos-delay="400" class="list-disc text-xl montserrat-regular ml-10 mt-5">
+                        <li>
+                            Comprobante de pago <span class="montserrat-bold">(Año en curso)</span>
+                        </li>
+                        <li>
+                            Constancia de situacion fiscal
+                        </li>
+                        <li>
+                            Correo electronico <span class="montserrat-bold">(Opcional)</span>
+                        </li>
+                    </ul>
+                    
+                    <p data-aos="fade-up" data-aos-delay="500" class="text-sm text-black montserrat-regular mt-5 mb-7">Tambien puedes consular el apartado de preguntas frecuentas para mas dudas o informacion</p>
+
+                    <div class="py-5">
+                        <a href="Ayuda.html">
+                            <div
+                                class="group content-center relative bg-blue-100 h-12 w-80 overflow-hidden rounded  text-lg shadow">
+                                <div
+                                    class="absolute inset-0 w-3 bg-blue-900 transition-all duration-[250ms] ease-out group-hover:w-full">
+                                </div>
+                                <div class="relative flex intems-center justify-center
+                                space-x-1 text-blue-900 group-hover:text-white montserrat-semibold">
+    
+                                    <span>Ir a preguntas frecuentes</span>
+    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler m-auto icons-tabler-outline icon-tabler-chevron-right">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M9 6l6 6l-6 6" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="/src/tailwind.config.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../scripts/index/index.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+
+
+<footer class="bg-white w-full shadow  ">
+    <div class="w-full max-w-6xl px-6 mx-auto p-4 md:py-8">
+        <div class="flex w-full flex-wrap md:flex-nowrap justify-center md:justify-between">
+            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="../../public/img/LOGOMTY2024.png" class="h-32" alt="Flowbite Logo" />
+            </a>
+            <ul
+                class="flex w-full md:w-auto justify-center items-center space-x-3 mb-6 text-sm font-medium text-black sm:mb-0 ">
+                <li>
+                    <a href="https://www.facebook.com/mtygob" class="hover:underline me-4 md:me-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://x.com/mtygob" class="hover:underline me-4 md:me-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/channel/UCvLsQJP03sqZGvVcf4FdW_g?app=desktop"
+                        class="hover:underline me-4 md:me-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                        </svg>
+                    </a>
+                </li>
+
+                </li>
+
+
+
+            </ul>
+        </div>
+        <span class="block text-sm text-black montserrat-semibold text-center ">© 2024 <a href="https://flowbite.com/"
+                class="hover:underline">Munipio de la ciudad de Monterrey</a> - Todos
+            los derechos reservados.</span>
+    </div>
+</footer>
+
+
+
+</html>

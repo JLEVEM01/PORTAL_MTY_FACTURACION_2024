@@ -8,7 +8,8 @@ tailwind.config = {
             backgroundImage: {
                 "bgIndex": "url('/public/img/Backgrounds/bgIndex.jpg')",
                 "bgFAQ": "url('/public/img/Backgrounds/bgFAQ.jpg')",
-                "bgContacto": "url('/public/img/Backgrounds/bgContacto.jpg')"
+                "bgContacto": "url('/public/img/Backgrounds/bgContacto.jpg')",
+                "bgCard": "url('/public/img/bgPago2.jpg')"
             },
             
         }
