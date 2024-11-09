@@ -72,22 +72,16 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 var swiper = new Swiper(".mySwiper", {
-    // effect: "creative",
-    // creativeEffect: {
-    //     prev: {
-    //         shadow: true,
-    //         translate: ["100%", 0, -400],
-    //         opacity: 10,
-    //     },
-    //     next: {
-    //         translate: ["100%", 0, 0],
-    //         opacity: 10,
 
-    //     },
-    // },
     slidesPerView: "auto",
     spaceBetween: 30,
     grabCursor: true,
+    loop: true,
+    autoplay:{
+        delay: 10000,
+        disableOnInteraction: false,
+    },
+
 
     pagination: {
         el: ".swiper-pagination",
@@ -98,7 +92,7 @@ var swiper = new Swiper(".mySwiper", {
             slidesPerView: 2,
         },
         1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
         },
         1280:{
             slidesPerView: 4,
