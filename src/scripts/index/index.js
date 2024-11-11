@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const logosect = document.getElementById("logoSection")
 
     window.addEventListener('load', () => {
+
         loader.classList.add('hidden', 'bg-transparent');
+
 
 
         if (window.scrollY > 50) {
