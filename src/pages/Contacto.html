@@ -17,7 +17,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/fonts.css">
 
-
+    <link rel="stylesheet" href="../styles/hamburgerButton.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
 
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <nav class="bg-transparent fixed z-40 w-full md:bg-white md:shadow-xl flex  justify-center h-12">
+    <nav class="bg-transparent fixed z-50 w-full md:bg-white md:shadow-xl flex  justify-center h-12">
 
         <div class="flex  md:space-x-5 justify-beetwwen">
 
@@ -71,23 +71,28 @@
                 </ul>
             </div>
 
-            <div data-aos="fade-down" data-aos-delay="100"
-                class="bg-gray-100 shadow-lg h-24 md:h-28 w-56 m-auto  content-center rounded-b-2xl">
-                <img data-aos="zoom-in" data-aos-delay="200" src="../../public/img/LOGOMTY2024.png" alt="" width="200"
-                    class="m-auto">
+            <div data-aos="fade-down" data-aos-delay="100" >
+                <div 
+                class="bg-gray-100 shadow-lg h-28 -mt-2 md:h-32 w-56 m-auto  content-center rounded-b-2xl transition ease-in-out delay-150 translate-y-3 scale-110  duration-300 ease-in-out " id="logoSection">
+                <div class="pt-4 md:pt-0">
+                    <img data-aos="zoom-in" data-aos-delay="200" src="../../public/img/LOGOMTY2024.png" alt="" width=""
+                    class="m-auto w-[200px]">
+                </div>
 
                 <div class="flex justify-center ">
                     <button data-collapse-toggle="navbar-multi-level" type="button"
-                        class="inline-flex items-center mx-auto p-2  h-10 w-10 bg-white rounded-full transition-transform duration-300  justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="navbar-multi-level" aria-expanded="false" id="menu-toggle">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
+                        class="menu inline-flex items-center mx-auto p-2  h-10 w-10 bg-white rounded-full transition-transform duration-300  justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                        aria-controls="navbar-multi-level" aria-expanded="false" id="menu-toggle" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                          </svg>
                     </button>
                 </div>
+
+            </div>
 
             </div>
 
@@ -116,19 +121,18 @@
 
     </nav>
 
-    <div class="w-full h-screen fixed z-30 bg-blue-900/30 backdrop-blur-2xl content-center hidden md:hidden "
+    <div class="w-full h-screen fixed z-40 bg-[#151a36]/95 content-center hidden md:hidden inset-0 overflow-auto"
         id="navbar-multi-level">
 
         <div class='accordion-group' data-accordion="default-accordion">
 
-            <div class='accordion p-3 bg-dark/20 backdrop-blur-xl m-2 rounded-xl  ' id='basic-heading-one-default'>
-                <a  href="index.html"
+            <div class='accordion p-3 m-2 rounded-xl  ' id='basic-heading-one-default'>
+                <a href="index.html"
                     class='accordion-toggle group rounded  p-5  accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
                     aria-controls='basic-collapse-one-default'>
                     <div class="flex space-x-2 justify-between items-center w-full">
                         <div class="flex space-x-5 items-center">
-                            <i class="fas fa-home w-5 fa-lg" style="color: #ffffff;"></i>
-                            <h5 class="montserrat-semibold text-2xl text-white">Inicio </h5>
+                            <h5 class="montserrat-semibold text-3xl text-white">Inicio </h5>
                         </div>
 
                     </div>
@@ -140,15 +144,14 @@
                 </div>
             </div>
 
-            <div class='accordion p-3 bg-dark/20 backdrop-blur-xl m-2 rounded-xl ' id='basic-heading-one-default'>
+            <div class='accordion p-3  m-2 rounded-xl ' id='basic-heading-one-default'>
                 <button
-                    class='accordion-toggle group rounded p-5  accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
+                    class='accordion-toggle group rounded p-5   accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
                     aria-controls='basic-collapse-one-default'>
                     <div class="flex space-x-2 justify-between items-center w-full">
                         <div class="flex space-x-5 items-center">
-                            <i class="fas fa-file w-5 fa-lg" style="color: #ffffff;"></i>
 
-                            <h5 class="montserrat-semibold text-2xl text-white">Facturacion</h5>
+                            <h5 class="montserrat-semibold text-3xl text-white">Facturacion</h5>
                         </div>
 
                         <svg class='text-white transition duration-500 group-hover:text-white accordion-active:text-white accordion-active:rotate-180'
@@ -163,26 +166,26 @@
                 </button>
                 <div id='basic-collapse-one-default' class='accordion-content w-full px-0 overflow-hidden pr-4 '
                     aria-labelledby='basic-heading-one-default'>
-                    <ul class=" text-xl text-white montserrat-regular pl-9 pt-5 space-y-5" id="navbar-multi-level-mobile">
+                    <ul class=" text-2xl text-white montserrat-regular pl-9 pt-5 space-y-5"
+                        id="navbar-multi-level-mobile">
                         <li><a href="Facturacion/Municipio.html">Municipio</a></li>
                         <li><a href="Facturacion/EnLinea.html">En linea</a></li>
                         <li><a href="Facturacion/Banorte.html">Banorte</a></li>
                         <li><a href="Facturacion//OXXO.html">OXXO</a></li>
                         <li><a href="Facturacion/Afirme.html">Afirme</a></li>
                         <li><a href="Facturacion/Banorte.html">Banregio</a></li>
-    
+
                     </ul>
                 </div>
             </div>
 
-            <div class='accordion p-3 bg-dark/20 backdrop-blur-xl m-2 rounded-xl ' id='basic-heading-two-default'>
+            <div class='accordion p-3  m-2 rounded-xl ' id='basic-heading-two-default'>
                 <button
                     class='accordion-toggle group  rounded  p-5 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600'
                     aria-controls='basic-collapse-two-default'>
                     <div class="flex space-x-2 justify-between items-center w-full">
                         <div class="flex space-x-5 items-center">
-                            <i class="fas fa-search w-5 fa-lg" style="color: #ffffff;"></i>
-                            <h5 class="montserrat-semibold text-2xl text-white">Consultar</h5>
+                            <h5 class="montserrat-semibold text-3xl text-white">Consultar</h5>
 
                         </div>
                         <svg class='text-white transition text-center duration-500 group-hover:text-white accordion-active:text-white accordion-active:rotate-180 '
@@ -197,27 +200,26 @@
                 </button>
                 <div id='basic-collapse-two-default' class='accordion-content  w-full px-0 overflow-hidden  pr-4 '
                     aria-labelledby='basic-heading-two-default'>
-                    <ul class=" text-xl text-white montserrat-regular pl-9 pt-5 space-y-5" id="navbar-multi-level-mobile">
+                    <ul class=" text-2xl text-white montserrat-regular pl-9 pt-5 space-y-5"
+                        id="navbar-multi-level-mobile">
                         <li><a href="Consultar/Municipio.html">Municipio</a></li>
                         <li><a href="Consultar/">En linea</a></li>
                         <li><a href="Consultar/Banorte.html">Banorte</a></li>
                         <li><a href="Consultar/OXXO.html">OXXO</a></li>
                         <li><a href="Consultar/Afirme.html">Afirme</a></li>
                         <li><a href="Consultar/Banorte.html">Banregio</a></li>
-    
+
                     </ul>
                 </div>
             </div>
 
-            <div class='accordion p-3 bg-dark/20 backdrop-blur-xl m-2 rounded-xl ' id='basic-heading-three-default'>
-                <a
-                    href="Contacto.html"
+            <div class='accordion p-3  m-2 rounded-xl ' id='basic-heading-three-default'>
+                <a href="Contacto.html"
                     class='accordion-toggle group rounded p-5 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600'
                     aria-controls='basic-collapse-three-default'>
                     <div class="flex space-x-2 justify-between items-center w-full">
                         <div class="flex space-x-5 items-center">
-                            <i class="fas fa-envelope w-5 fa-lg" style="color: #ffffff;"></i>
-                            <h5 class="montserrat-semibold text-2xl text-white">Contacto</h5>
+                            <h5 class="montserrat-semibold text-3xl text-white">Contacto</h5>
                         </div>
 
 
@@ -230,15 +232,13 @@
                 </div>
             </div>
 
-            <div class='accordion p-3 bg-dark/20 backdrop-blur-xl m-2 rounded-xl' id='basic-heading-three-default'>
-                <a
-                    href="Ayuda.html"
+            <div class='accordion p-3 m-2 rounded-xl' id='basic-heading-three-default'>
+                <a href="Ayuda.html"
                     class='accordion-toggle group rounded p-5 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600'
                     aria-controls='basic-collapse-three-default'>
                     <div class="flex space-x-2 justify-between items-center w-full">
                         <div class="flex space-x-5 items-center">
-                            <i class="fas fa-question-circle fa-lg w-5" style="color: #ffffff;"></i>
-                            <h5 class="montserrat-semibold text-2xl text-white">Ayuda </h5>
+                            <h5 class="montserrat-semibold text-3xl text-white">Ayuda </h5>
 
                         </div>
 
@@ -347,6 +347,7 @@
 
     <script src="/src/tailwind.config.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../scripts/scrollEvent.js"></script>
     <script>
         AOS.init();
     </script>

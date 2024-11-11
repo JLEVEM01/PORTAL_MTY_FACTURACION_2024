@@ -6,16 +6,43 @@ document.addEventListener('DOMContentLoaded', () => {
     const links = navBar.querySelectorAll("a")
     const l1 = document.getElementById("listNav1")
     const l2 = document.getElementById("listNav2")
+    const logosect = document.getElementById("logoSection")
 
     window.addEventListener('load', () => {
         loader.classList.add('hidden', 'bg-transparent');
+
+
+        if (window.scrollY > 50) {
+            logosect.classList.add("translate-y-0", "scale-100")
+            logosect.classList.remove("translate-y-3", "scale-110")
+
+            navBar.classList.add("md:bg-white", "md:shadow-2xl", "transition-all", "duration-500", "transform")
+
+            links.forEach(link => {
+                link.classList.remove("after:bg-white")
+                link.classList.add("after:bg-black")
+            })
+
+            l1.classList.add("text-black")
+            l1.classList.remove("text-white")
+
+
+            l2.classList.add("text-black")
+            l2.classList.remove("text-white")
+
+
+        }
     })
 
 
     window.addEventListener("scroll", function () {
         if (window.scrollY > 50) {
 
-            navBar.classList.add("md:bg-white" , "md:shadow-2xl")
+
+            logosect.classList.add("translate-y-0", "scale-100")
+            logosect.classList.remove("translate-y-3", "scale-110")
+
+            navBar.classList.add("md:bg-white", "md:shadow-2xl", "transition-all", "duration-500", "transform")
             navBar.classList.remove('bg-transparent', 'md:bg-black/10', 'md:backdrop-blur-xl')
 
             links.forEach(link => {
@@ -26,14 +53,19 @@ document.addEventListener('DOMContentLoaded', () => {
             l1.classList.add("text-black")
             l1.classList.remove("text-white")
 
-            
+
             l2.classList.add("text-black")
             l2.classList.remove("text-white")
 
         }
 
         else {
-            navBar.classList.remove("md:bg-white","md:shadow-2xl")
+            logosect.classList.add("translate-y-3", "scale-110")
+            logosect.classList.remove("translate-y-", "scale-100")
+
+
+
+            navBar.classList.remove("md:bg-white", "md:shadow-2xl",)
             navBar.classList.add("bg-transparent", "md:bg-black/10", "md:backdrop-blur-xl")
 
             links.forEach(link => {
@@ -77,7 +109,7 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     grabCursor: true,
     loop: true,
-    autoplay:{
+    autoplay: {
         delay: 10000,
         disableOnInteraction: false,
     },
@@ -94,7 +126,7 @@ var swiper = new Swiper(".mySwiper", {
         1024: {
             slidesPerView: 3,
         },
-        1280:{
+        1280: {
             slidesPerView: 4,
         }
     },
