@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../../styles/fonts.css">
@@ -24,12 +25,13 @@
         rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
-    <link rel="stylesheet" href="../../styles/hamburgerButton.css">
     <link rel="stylesheet" href="../../styles/loader.css">
-    <title>Consulltar</title>
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/hamburgerButton.css">
+    <link rel="stylesheet" href="../../styles/EnLinea/EnLinea.css">
+
+    <title>Consultar</title>
 </head>
 
 <div id="loader" class="fixed h-screen inset-0 flex items-center justify-center bg-white z-50">
@@ -37,7 +39,7 @@
     </div>
 </div>
 
-<body>
+<body >
 
 
     <nav class="bg-transparent fixed z-40 w-full md:bg-white md:shadow-xl flex  justify-center h-12">
@@ -58,22 +60,22 @@
                                 <div class="flex flex-row bg-gray-100 w-56 rounded-lg shadow-2xl ">
                                     <div class="flex flex-col w-full">
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100 rounded-t-lg">
-                                            <a href="Municipio.html">Municipio</a>
+                                            <a href="../Consultar/Municipio.html">Municipio</a>
                                         </div>
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
                                             <a href="">En linea</a>
                                         </div>
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
-                                            <a href="Banorte.html">Banorte</a>
+                                            <a href="../Consultar/Banorte.html">Banorte</a>
                                         </div>
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
-                                            <a href="OXXO.html">OXXO</a>
+                                            <a href="../Consultar/OXXO.html">OXXO</a>
                                         </div>
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
-                                            <a href="Afirme.html">Afirme</a>
+                                            <a href="../Consultar/Afirme.html">Afirme</a>
                                         </div>
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100  rounded-b-lg">
-                                            <a href="Banregio.html">Banregio</a>
+                                            <a href="../Consultar/Banregio.html">Banregio</a>
                                         </div>
                                     </div>
                                 </div>
@@ -85,32 +87,28 @@
                     </li>
                 </ul>
             </div>
-
-            <div data-aos="fade-down" data-aos-delay="100">
-                <div class="bg-gray-100 shadow-lg h-28 -mt-2 md:h-32 w-56 m-auto  content-center rounded-b-2xl transition ease-in-out delay-150 translate-y-3 scale-110  duration-300 ease-in-out "
-                    id="logoSection">
-                    <div class="pt-4 md:pt-0">
-                        <img data-aos="zoom-in" data-aos-delay="200" src="../../../public/img/LOGOMTY2024.png" alt=""
-                            width="" class="m-auto w-[200px]">
-                    </div>
-
-                    <div class="flex justify-center ">
-                        <button data-collapse-toggle="navbar-multi-level" type="button"
-                            class="menu inline-flex items-center mx-auto p-2  h-10 w-10 bg-white rounded-full transition-transform duration-300  justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 "
-                            aria-controls="navbar-multi-level" aria-expanded="false" id="menu-toggle"
-                            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
-
-                            <svg width="100" height="100" viewBox="0 0 100 100">
-                                <path class="line line1"
-                                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                                <path class="line line2" d="M 20,50 H 80" />
-                                <path class="line line3"
-                                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                            </svg>
-                        </button>
-                    </div>
-
+            <div data-aos="fade-down" data-aos-delay="100" >
+                <div 
+                class="bg-gray-100 shadow-lg h-28 -mt-2 md:h-32 w-56 m-auto  content-center rounded-b-2xl transition ease-in-out delay-150 translate-y-3 scale-110  duration-300 ease-in-out " id="logoSection">
+                <div class="pt-4 md:pt-0">
+                    <img data-aos="zoom-in" data-aos-delay="200" src="../../../public/img/LOGOMTY2024.png" alt="" width=""
+                    class="m-auto w-[200px]">
                 </div>
+
+                <div class="flex justify-center ">
+                    <button data-collapse-toggle="navbar-multi-level" type="button"
+                        class="menu inline-flex items-center mx-auto p-2  h-10 w-10 bg-white rounded-full transition-transform duration-300  justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                        aria-controls="navbar-multi-level" aria-expanded="false" id="menu-toggle" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                          </svg>
+                    </button>
+                </div>
+
+            </div>
 
             </div>
 
@@ -138,6 +136,7 @@
 
 
     </nav>
+
     <div class="w-full h-screen fixed z-30 bg-[#151a36]/95 content-center hidden md:hidden inset-0 overflow-auto"
         id="navbar-multi-level">
 
@@ -185,12 +184,12 @@
                     aria-labelledby='basic-heading-one-default'>
                     <ul class=" text-2xl text-white montserrat-regular pl-9 pt-5 space-y-5"
                         id="navbar-multi-level-mobile">
-                        <li><a href="../Facturacion/">Municipio</a></li>
-                        <li><a href="../Facturacion/EnLinea.html">En linea</a></li>
-                        <li><a href="../Facturacion/Banorte.html">Banorte</a></li>
-                        <li><a href="../Facturacion/OXXO.html">OXXO</a></li>
-                        <li><a href="../Facturacion/Afirme.html">Afirme</a></li>
-                        <li><a href="../Facturacion/Banorte.html">Banregio</a></li>
+                        <li><a href="Municipio.html">Municipio</a></li>
+                        <li><a href="EnLinea.html">En linea</a></li>
+                        <li><a href="Banorte.html">Banorte</a></li>
+                        <li><a href="OXXO.html">OXXO</a></li>
+                        <li><a href="Afirme.html">Afirme</a></li>
+                        <li><a href="Banorte.html">Banregio</a></li>
 
                     </ul>
                 </div>
@@ -219,12 +218,13 @@
                     aria-labelledby='basic-heading-two-default'>
                     <ul class=" text-2xl text-white montserrat-regular pl-9 pt-5 space-y-5"
                         id="navbar-multi-level-mobile">
-                        <li><a href="Municipio.html">Municipio</a></li>
-                        <li><a href="EnLinea.html">En linea</a></li>
-                        <li><a href="Banorte.html">Banorte</a></li>
-                        <li><a href="OXXO.html">OXXO</a></li>
-                        <li><a href="Afirme.html">Afirme</a></li>
-                        <li><a href="Banregio.html">Banregio</a></li>
+                        <li><a href="../Consultar/Municipio.html">Municipio</a></li>
+                        <li><a href="../Consultar/EnLinea.html">En linea</a></li>
+                        <li><a href="../Consultar/Banorte.html">Banorte</a></li>
+                        <li><a href="../Consultar/OXXO.html">OXXO</a></li>
+                        <li><a href="../Consultar/Afirme.html">Afirme</a></li>
+                        <li><a href="../Consultar/Banorte.html">Banregio</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -275,10 +275,10 @@
         <div class="max-w-6xl mx-auto px-10">
 
             <div data-aos="zoom-in" data-aos-delay="100"
-                class="flex bg-white z'20 w-full justify-center intems-center ">
-                <div class="flex w-full flex-wrap shadow-md bg-white rounded-lg overflow-hidden">
+                class="flex bg-white z-20 w-full justify-center intems-center ">
+                <div class="flex w-full flex-wrap lg:flex-nowrap shadow-md bg-white rounded-lg overflow-hidden">
 
-                    <a href="" class="flex-1 w-full border-b-4 flex items-center p-4 border-r relative">
+                    <a href="" class="flex w-full border-b-4 flex items-center p-4 border-r relative">
                         <div class="flex items-center">
                             <div
                                 class="w-10 h-10 flex items-center justify-center border-2 border-blue-500  text-indigo-600 rounded-full">
@@ -286,22 +286,22 @@
                             </div>
                             <div class="ml-4">
                                 <div class="text-lg montserrat-semibold text-blue-500">Busqueda</div>
-                                <div class="text-gray-500  montserrat-regular text-sm text-wrap">Identificar comprobante
+                                <div class="text-gray-500 text-sm text-wrap montserrat-regular">Identificar comprobante
                                 </div>
                             </div>
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-blue-500"></div>
                     </a>
 
-                    <div class="flex-1 w-full flex items-center p-4">
+                    <div class="flex w-full flex items-center p-4">
                         <div class="flex items-center">
                             <div
                                 class="w-10 h-10 flex items-center justify-center border-2 border-gray-300 text-gray-300 rounded-full">
                                 02
                             </div>
                             <div class="ml-4">
-                                <div class="text-lg montserrat-semibold text-gray-500">Descargar documentos</div>
-                                <div class="text-gray-500 montserrat-regular">Descarga XML y PDF.</div>
+                                <div class="text-lg montserrat-semibold text-gray-500">Documentos</div>
+                                <div class="text-gray-500 montserrat-regular ">Descarga XML y PDF.</div>
                             </div>
                         </div>
                     </div>
@@ -313,9 +313,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
             <div class=" grid grid-cols-2 z-10 mt-10 gap-5 ">
                 <div class="col-span-2 lg:col-span-1">
-                    <h1 data-aos="fade-down" data-aos-delay="700" class="text-5xl text-sky-800 montserrat-bold">Emision
-                        de
-                        factura</h1>
+                    <h1 data-aos="fade-down" data-aos-delay="700" class="text-5xl text-sky-800 montserrat-bold">Consultar factura</h1>
 
                     <p data-aos="fade-down" data-aos-delay="800"
                         class="my-5 text-medium md:text-lg white-spacenormal text-gray-500 montserrat-semibold">
@@ -376,7 +374,6 @@
                                     <option value="01">Octubre</option>
                                     <option value="01">Novirembre</option>
                                     <option value="01">Diciembre</option>
-
                                 </select>
 
                                 <select class="h-10 p-2 w-full rounded bg-gray-100 border-0">
@@ -399,7 +396,7 @@
                     </div>
 
 
-                    <a href="../DescargaDocsConsulta.html">
+                    <a href="../DatosFiscales.html">
                         <div
                             class="group content-center relative bg-blue-100 h-12 w-48 overflow-hidden rounded  text-lg shadow">
                             <div
@@ -444,8 +441,25 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="mt-5">
-                            <img src="../../../public/img/Comprobantes/AFIRME.jpg" alt="">
+                        <div>
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <img src="../../../public/img/Comprobantes/EN LINEA2.jpg" alt="">
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../../public/img/Comprobantes/EN LINEA3.jpg" alt="">
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../../../public/img/Comprobantes/EN_LINEA.jpg" alt="">
+
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -455,9 +469,18 @@
 
     <script src="/src/tailwind.config.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../../scripts/scrollEvent.js"></script>
+    <script src="../../scripts/EnLinea/EnLinea.js"></script>
+
     <script>
         AOS.init();
+
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
     </script>
 
 </body>
@@ -513,7 +536,6 @@
             los derechos reservados.</span>
     </div>
 </footer>
-
 
 
 </html>

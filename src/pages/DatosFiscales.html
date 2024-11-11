@@ -78,28 +78,31 @@
                 </ul>
             </div>
 
-            <div data-aos="fade-down" data-aos-delay="100" >
-                <div 
-                class="bg-gray-100 shadow-lg h-28 -mt-2 md:h-32 w-56 m-auto  content-center rounded-b-2xl transition ease-in-out delay-150 translate-y-3 scale-110  duration-300 ease-in-out " id="logoSection">
-                <div class="pt-4 md:pt-0">
-                    <img data-aos="zoom-in" data-aos-delay="200" src="../../public/img/LOGOMTY2024.png" alt="" width=""
-                    class="m-auto w-[200px]">
+            <div data-aos="fade-down" data-aos-delay="100">
+                <div class="bg-gray-100 shadow-lg h-28 -mt-2 md:h-32 w-56 m-auto  content-center rounded-b-2xl transition ease-in-out delay-150 translate-y-3 scale-110  duration-300 ease-in-out "
+                    id="logoSection">
+                    <div class="pt-4 md:pt-0">
+                        <img data-aos="zoom-in" data-aos-delay="200" src="../../public/img/LOGOMTY2024.png" alt=""
+                            width="" class="m-auto w-[200px]">
+                    </div>
+
+                    <div class="flex justify-center ">
+                        <button data-collapse-toggle="navbar-multi-level" type="button"
+                            class="menu inline-flex items-center mx-auto p-2  h-10 w-10 bg-white rounded-full transition-transform duration-300  justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                            aria-controls="navbar-multi-level" aria-expanded="false" id="menu-toggle"
+                            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+
+                            <svg width="100" height="100" viewBox="0 0 100 100">
+                                <path class="line line1"
+                                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                                <path class="line line2" d="M 20,50 H 80" />
+                                <path class="line line3"
+                                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                            </svg>
+                        </button>
+                    </div>
+
                 </div>
-
-                <div class="flex justify-center ">
-                    <button data-collapse-toggle="navbar-multi-level" type="button"
-                        class="menu inline-flex items-center mx-auto p-2  h-10 w-10 bg-white rounded-full transition-transform duration-300  justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 "
-                        aria-controls="navbar-multi-level" aria-expanded="false" id="menu-toggle" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
-
-                        <svg width="100" height="100" viewBox="0 0 100 100">
-                            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                            <path class="line line2" d="M 20,50 H 80" />
-                            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                          </svg>
-                    </button>
-                </div>
-
-            </div>
 
             </div>
 
@@ -352,14 +355,67 @@
                         <div class="mb-5">
                             <span class="text-sm montserrat-semibold text-dark">Uso de CFDI:</span>
                             <select class="h-10 p-2 w-full my-2  rounded bg-gray-100 border-0">
-                                <option value="01">01</option>
+                                <option selected disabled value="">Seleccionar</option>
+                                <option value="1">G01 Adquisición de mercancias.</option>
+                                <option value="2">G02 Devoluciones, descuentos o bonificaciones.</option>
+                                <option value="3">G03 Gastos en general.</option>
+                                <option value="4">I01 Construcciones.</option>
+                                <option value="5">I02 Mobiliario y equipo de oficina por inversiones.</option>
+                                <option value="6">I03 Equipo de transporte.</option>
+                                <option value="7">I04 Equipo de cómputo y accesorios.</option>
+                                <option value="8">I05 Dados, troqueles, moldes, matrices y herramental.</option>
+                                <option value="9">I06 Comunicaciones telefónicas.</option>
+                                <option value="10">I07 Comunicaciones satelitales.</option>
+                                <option value="11">I08 Otra maquinaria y equipo.</option>
+                                <option value="12">D01 Honorarios médicos, dentales y gastos hospitalarios.</option>
+                                <option value="13">D02 Gastos médicos por incapacidad o discapacidad.</option>
+                                <option value="14">D03 Gastos funerales.</option>
+                                <option value="15">D04 Donativos.</option>
+                                <option value="16">D05 Intereses reales efectivamente pagados por créditos hipotecarios
+                                    (casa
+                                    habitación).</option>
+                                <option value="17">D06 Aportaciones voluntarias al SAR.</option>
+                                <option value="18">D07 Primas por seguros de gastos médicos.</option>
+                                <option value="19">D08 Gastos de transportación escolar obligatoria.</option>
+                                <option value="20">D09 Depósitos en cuentas para el ahorro, primas que tengan como base
+                                    planes
+                                    de pensiones.</option>
+                                <option value="21">D10 Pagos por servicios educativos (colegiaturas).</option>
+                                <option value="22">CP01 Pagos.</option>
+                                <option value="23">CN01 Nómina.</option>
+                                <option value="24">S01 Sin Efectos Fiscales.</option>
+                                <option value="25">F01 Por Definir.</option>
                             </select>
                         </div>
 
                         <div class="mb-5">
                             <span class="text-sm montserrat-semibold text-dark">Regimen fiscal:</span>
                             <select class="h-10 p-2 w-full my-2  rounded-lg bg-gray-100 border-0">
-                                <option value="01">01</option>
+                                <option value="">Seleccionar</option>
+                                <option value="">601 - General de Ley Personas Morales</option>
+
+                                <option value="">603 - Personas Morales con Fines no Lucrativos</option>
+
+                                <option value="">605 - Sueldos y Salarios e Ingresos Asimilados a Salarios</option>
+
+                                <option value="">606 - Arrendamiento</option>
+                                <option value="">607 - Régimen de Enajenación o Adquisición de Bienes</option>
+                                <option value="">608 - Demás ingresos</option>
+                                <option value="">610 - Residentes en el Extranjero sin Establecimiento Permanente en México</option>
+                                <option value="">611 - Ingresos por Dividendos (socios y accionistas)</option>
+                                <option value="">612 - Personas Físicas con Actividades Empresariales y Profesionales</option>
+                                <option value="">614 - Ingresos por intereses</option>
+                                <option value="">615 - Régimen de los ingresos por obtención de premios</option>
+                                <option value="">616 - Sin obligaciones fiscales</option>
+                                <option value="">620 - Sociedades Cooperativas de Producción que optan por diferir sus ingresos</option>
+                                <option value="">621 - Incorporación Fiscal</option>
+                                <option value="">622 - Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras</option>
+                                <option value="">623 - Opcional para Grupos de Sociedades</option>
+                                <option value="">624 - Coordinados</option>
+                                <option value="">625 - Régimen de las Actividades Empresariales con ingresos a través de Plataformas Tecnológicas</option>
+
+                                <option value="">626 - Régimen Simplificado de Confianza</option>
+
                             </select>
                         </div>
 
@@ -450,7 +506,8 @@
             <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                 <img src="../../public/img/LOGOMTY2024.png" class="h-32" alt="Flowbite Logo" />
             </a>
-            <ul class="flex w-full md:w-auto justify-center items-center space-x-3 mb-6 text-sm font-medium text-black sm:mb-0 ">
+            <ul
+                class="flex w-full md:w-auto justify-center items-center space-x-3 mb-6 text-sm font-medium text-black sm:mb-0 ">
                 <li>
                     <a href="https://www.facebook.com/mtygob" class="hover:underline me-4 md:me-6">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"

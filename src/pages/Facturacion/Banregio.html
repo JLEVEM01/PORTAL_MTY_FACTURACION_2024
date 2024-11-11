@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../public/img/favicon.png" type="image/x-icon">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
@@ -25,14 +27,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
     <link rel="stylesheet" href="../../styles/hamburgerButton.css">
-
-    <title>Document</title>
+    <link rel="stylesheet" href="../../styles/loader.css">
+    <title>Facturacion</title>
 </head>
 
-<body transition-style class="--in-left bg-white">
+<div id="loader" class="fixed h-screen inset-0 flex items-center justify-center bg-white z-50">
+    <span class="loader"></span>
+    </div>
+</div>
+
+<body >
 
 
-    <nav class="bg-transparent fixed z-50 w-full md:bg-white md:shadow-xl flex  justify-center h-12">
+    <nav class="bg-transparent fixed z-40 w-full md:bg-white md:shadow-xl flex  justify-center h-12">
 
         <div class="flex  md:space-x-5 justify-beetwwen">
 
@@ -43,7 +50,7 @@
                             class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">Inicio</a>
                     </li>
                     <li class="group relative ">
-                        <a data-aos="fade-left" data-aos-delay="400" href="ConsultarFactura/Consulta.html"
+                        <a data-aos="fade-left" data-aos-delay="400" href=""
                             class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">
                             Consulta
                             <div class="hidden  absolute -left-40 group-hover:block  pt-10 ">
@@ -127,7 +134,7 @@
 
     </nav>
 
-    <div class="w-full h-screen fixed z-40 bg-[#151a36]/95 content-center hidden md:hidden inset-0 overflow-auto"
+    <div class="w-full h-screen fixed z-30 bg-[#151a36]/95 content-center hidden md:hidden inset-0 overflow-auto"
         id="navbar-multi-level">
 
         <div class='accordion-group' data-accordion="default-accordion">
@@ -147,7 +154,7 @@
                 <div id='basic-collapse-one-default' class='accordion-content w-full px-0 overflow-hidden pr-4 '
                     aria-labelledby='basic-heading-one-default'>
 
-                </div>../
+                </div>
             </div>
 
             <div class='accordion p-3  m-2 rounded-xl ' id='basic-heading-one-default'>
@@ -208,7 +215,7 @@
                     aria-labelledby='basic-heading-two-default'>
                     <ul class=" text-2xl text-white montserrat-regular pl-9 pt-5 space-y-5"
                         id="navbar-multi-level-mobile">
-                        <li><a href="../Consultar/">Municipio</a></li>
+                        <li><a href="../Consultar/Municipio.html">Municipio</a></li>
                         <li><a href="../Consultar/EnLinea.html">En linea</a></li>
                         <li><a href="../Consultar/Banorte.html">Banorte</a></li>
                         <li><a href="../Consultar/OXXO.html">OXXO</a></li>
@@ -260,7 +267,7 @@
     </div>
 
 
-    <section class="content-center h-full pt-40 pb-20 z-30">
+    <section class="content-center h-full pt-40 pb-20 z-20">
         <div class="max-w-6xl mx-auto px-10">
 
             <div data-aos="zoom-in" data-aos-delay="100"
