@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../../../public/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/assets/img/favicon.png" type="image/x-icon">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
@@ -14,9 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../../styles/fonts.css">
+    <link rel="stylesheet" href="/src/styles/fonts.css">
 
-    <link rel="stylesheet" href="../../styles/hamburgerButton.css">
+    <link rel="stylesheet" href="/src/styles/hamburgerButton.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -29,19 +29,19 @@
     <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/transition-style">
 
-    <link rel="stylesheet" href="../../styles/transitionPage.css">
-    <link rel="stylesheet" href="../../styles/loader.css">
+    <link rel="stylesheet" href="/src/styles/transitionPage.css">
+    <link rel="stylesheet" href="/src/styles/loader.css">
     <title>Facturacion</title>
 </head>
 
 <div id="loader" class="fixed h-screen inset-0 flex items-center justify-center bg-white z-50">
     <span class="loader"></span>
-    </div>
+</div>
 </div>
 
 
 
-<body >
+<body>
 
     <nav class="bg-transparent fixed z-40 w-full md:bg-white md:shadow-xl flex  justify-center h-12">
 
@@ -50,7 +50,7 @@
             <div class=" hidden md:block content-center ">
                 <ul class="flex  text-sm items-center space-x-5">
                     <li>
-                        <a data-aos="fade-left" data-aos-delay="800" href="../../../index.html"
+                        <a data-aos="fade-left" data-aos-delay="800" href="/src/index.html"
                             class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">Inicio</a>
                     </li>
                     <li class="group relative ">
@@ -61,22 +61,22 @@
                                 <div class="flex flex-row bg-gray-100 w-56 rounded-lg shadow-2xl ">
                                     <div class="flex flex-col w-full">
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100 rounded-t-lg">
-                                            <a href="../Consultar/Municipio.html">Municipio</a>
+                                            <a href="/src/pages/Consultar/Municipio.html">Municipio</a>
                                         </div>
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
-                                            <a href="">En linea</a>
+                                            <a href="/src/pages/Consultar/EnlInea.html">En linea</a>
                                         </div>
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
-                                            <a href="../Consultar/Banorte.html">Banorte</a>
+                                            <a href="/src/pages/Consultar/Banorte.html">Banorte</a>
                                         </div>
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
-                                            <a href="../Consultar/OXXO.html">OXXO</a>
+                                            <a href="/src/pages/Consultar/OXXO.html">OXXO</a>
                                         </div>
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100">
-                                            <a href="../Consultar/Afirme.html">Afirme</a>
+                                            <a href="/src/pages/Consultar/Afirme.html">Afirme</a>
                                         </div>
                                         <div class="montserrat-regular text-xl p-4 hover:bg-cyan-100  rounded-b-lg">
-                                            <a href="../Consultar/Banregio.html">Banregio</a>
+                                            <a href="/src/pages/Consultar/Banregio.html">Banregio</a>
                                         </div>
                                     </div>
                                 </div>
@@ -89,42 +89,45 @@
                 </ul>
             </div>
 
-            <div data-aos="fade-down" data-aos-delay="100" >
-                <div 
-                class="bg-gray-100 shadow-lg h-28 -mt-2 md:h-32 w-56 m-auto  content-center rounded-b-2xl transition ease-in-out delay-150 translate-y-3 scale-110  duration-300 ease-in-out " id="logoSection">
-                <div class="pt-4 md:pt-0">
-                    <img data-aos="zoom-in" data-aos-delay="200" src="../../../public/img/LOGOMTY2024.png" alt="" width=""
-                    class="m-auto w-[200px]">
+            <div data-aos="fade-down" data-aos-delay="100">
+                <div class="bg-gray-100 shadow-lg h-28 -mt-2 md:h-32 w-56 m-auto  content-center rounded-b-2xl transition ease-in-out delay-150 translate-y-3 scale-110  duration-300 ease-in-out "
+                    id="logoSection">
+                    <div class="pt-4 md:pt-0">
+                        <img data-aos="zoom-in" data-aos-delay="200" src="/src/assets/img/LOGOMTY2024.png" alt=""
+                            width="" class="m-auto w-[200px]">
+                    </div>
+
+                    <div class="flex justify-center ">
+                        <button data-collapse-toggle="navbar-multi-level" type="button"
+                            class="menu inline-flex items-center mx-auto p-2  h-10 w-10 bg-white rounded-full transition-transform duration-300  justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                            aria-controls="navbar-multi-level" aria-expanded="false" id="menu-toggle"
+                            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+
+                            <svg width="100" height="100" viewBox="0 0 100 100">
+                                <path class="line line1"
+                                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                                <path class="line line2" d="M 20,50 H 80" />
+                                <path class="line line3"
+                                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                            </svg>
+                        </button>
+                    </div>
+
                 </div>
-
-                <div class="flex justify-center ">
-                    <button data-collapse-toggle="navbar-multi-level" type="button"
-                        class="menu inline-flex items-center mx-auto p-2  h-10 w-10 bg-white rounded-full transition-transform duration-300  justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 "
-                        aria-controls="navbar-multi-level" aria-expanded="false" id="menu-toggle" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
-
-                        <svg width="100" height="100" viewBox="0 0 100 100">
-                            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                            <path class="line line2" d="M 20,50 H 80" />
-                            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                          </svg>
-                    </button>
-                </div>
-
-            </div>
 
             </div>
 
 
             <div class=" hidden md:block  content-center ">
                 <ul class="flex  text-sm items-center  space-x-5">
-                    <li><a data-aos="fade-right" data-aos-delay="400" href="../Contacto.html"
+                    <li><a data-aos="fade-right" data-aos-delay="400" href="/src/pages/Contacto.html"
                             class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">
                             Contacto
                         </a>
                     </li>
                     <li>
 
-                        <a data-aos="fade-right" data-aos-delay="800" href="../Ayuda.html"
+                        <a data-aos="fade-right" data-aos-delay="800" href="/src/pages/Ayuda.html"
                             class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left montserrat-semibold">
                             Ayuda
                         </a>
@@ -145,7 +148,7 @@
         <div class='accordion-group' data-accordion="default-accordion">
 
             <div class='accordion p-3 m-2 rounded-xl  ' id='basic-heading-one-default'>
-                <a href="../../../index.html"
+                <a href="/src/index.html"
                     class='accordion-toggle group rounded  p-5  accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600'
                     aria-controls='basic-collapse-one-default'>
                     <div class="flex space-x-2 justify-between items-center w-full">
@@ -220,19 +223,19 @@
                     aria-labelledby='basic-heading-two-default'>
                     <ul class=" text-2xl text-white montserrat-regular pl-9 pt-5 space-y-5"
                         id="navbar-multi-level-mobile">
-                        <li><a href="../Consultar/Municipio.html">Municipio</a></li>
-                        <li><a href="../Consultar/EnLinea.html">En linea</a></li>
-                        <li><a href="../Consultar/Banorte.html">Banorte</a></li>
-                        <li><a href="../Consultar/OXXO.html">OXXO</a></li>
-                        <li><a href="../Consultar/Afirme.html">Afirme</a></li>
-                        <li><a href="../Consultar/Banorte.html">Banregio</a></li>
+                        <li><a href="/src/pages/Consultar/Municipio.html">Municipio</a></li>
+                        <li><a href="/src/pages/Consultar/EnLinea.html">En linea</a></li>
+                        <li><a href="/src/pages/Consultar/Banorte.html">Banorte</a></li>
+                        <li><a href="/src/pages/Consultar/OXXO.html">OXXO</a></li>
+                        <li><a href="/src/pages/Consultar/Afirme.html">Afirme</a></li>
+                        <li><a href="/src/pages/Consultar/Banorte.html">Banregio</a></li>
 
                     </ul>
                 </div>
             </div>
 
             <div class='accordion p-3  m-2 rounded-xl ' id='basic-heading-three-default'>
-                <a href="../Contacto.html"
+                <a href="/src/pages/Contacto.html"
                     class='accordion-toggle group rounded p-5 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600'
                     aria-controls='basic-collapse-three-default'>
                     <div class="flex space-x-2 justify-between items-center w-full">
@@ -251,7 +254,7 @@
             </div>
 
             <div class='accordion p-3 m-2 rounded-xl' id='basic-heading-three-default'>
-                <a href="../Ayuda.html"
+                <a href="/src/pages/Ayuda.html"
                     class='accordion-toggle group rounded p-5 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600'
                     aria-controls='basic-collapse-three-default'>
                     <div class="flex space-x-2 justify-between items-center w-full">
@@ -272,7 +275,7 @@
 
     </div>
 
-    <section class="content-center h-full pt-40 pb-20 z-20">
+    <section class="content-center h-full pt-36 pb-20 z-20">
         <div class="max-w-6xl mx-auto px-10">
 
             <div data-aos="zoom-in" data-aos-delay="100"
@@ -411,7 +414,7 @@
                     </div>
 
 
-                    <a href="../DatosFiscales.html">
+                    <a href="/src/pages/DatosFiscales.html">
                         <div
                             class="group content-center relative bg-blue-100 h-12 w-48 overflow-hidden rounded  text-lg shadow">
                             <div
@@ -457,7 +460,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="../../../public/img/Comprobantes/OXXO.jpg" alt="">
+                            <img src="/src/assets/img/Comprobantes/OXXO.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -467,7 +470,7 @@
 
     <script src="/src/tailwind.config.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="../../scripts/scrollEvent.js"></script>
+    <script src="/src/scripts/scrollEvent.js"></script>
     <script>
         AOS.init();
     </script>
@@ -480,9 +483,10 @@
     <div class="w-full max-w-6xl px-6 mx-auto p-4 md:py-8">
         <div class="flex w-full flex-wrap md:flex-nowrap justify-center md:justify-between">
             <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                <img src="../../../public/img/LOGOMTY2024.png" class="h-32" alt="Municipio de Monterrey" />
+                <img src="/src/assets/img/LOGOMTY2024.png" class="h-32" alt="Municipio de Monterrey" />
             </a>
-            <ul class="flex w-full md:w-auto justify-center items-center space-x-3 mb-6 text-sm font-medium text-black sm:mb-0 ">
+            <ul
+                class="flex w-full md:w-auto justify-center items-center space-x-3 mb-6 text-sm font-medium text-black sm:mb-0 ">
                 <li>
                     <a href="https://www.facebook.com/mtygob" class="hover:underline me-4 md:me-6">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"

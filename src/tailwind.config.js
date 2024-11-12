@@ -6,10 +6,10 @@ tailwind.config = {
                 clifford: '#da373d',
             },
             backgroundImage: {
-                "bgIndex": "url('/public/img/Backgrounds/bgIndex.jpg')",
-                "bgFAQ": "url('/public/img/Backgrounds/bgFAQ.jpg')",
-                "bgContacto": "url('/public/img/Backgrounds/bgContacto.jpg')",
-                "bgCard": "url('/public/img/bgPago2.jpg')"
+                "bgIndex": "url('/src/ssets/img/Backgrounds/bgIndex.jpg')",
+                "bgFAQ": "url('/src/assets/img/Backgrounds/bgFAQ.jpg')",
+                "bgContacto": "url('/src/assets/img/Backgrounds/bgContacto.jpg')",
+                "bgCard": "url('/src/assets/img/bgPago2.jpg')"
             },
             
         }
