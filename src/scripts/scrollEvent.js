@@ -24,5 +24,9 @@ document.addEventListener("DOMContentLoaded", function(){
             sectLogo.classList.add("translate-y-3", "scale-110")
             sectLogo.classList.remove("translate-y-", "scale-100")
         }
+
+        setTimeout(() => {
+            
+        }, timeout);
     })
 })
